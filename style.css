@@ -1,0 +1,89 @@
+*{
+    /*this section for by default mtlab ye lagte hi pure page pr yahi apply ho jayega 
+    not only body but the whole page*/
+    margin:0;
+    padding: 0;
+    text-align: center; /*pura ka pura center me rahega*/
+}
+
+h1{
+    background-color: #241023;
+    color: aliceblue;
+    font-style: oblique;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice
+{
+    /* dot(.) is used for class representation*/
+
+    /* div container choice k ander images hai so image ka height width kma hi hona chaiye isse 
+    dusri baat pure container ko kahan rakhna and kitna width height dena hai ye yahan se likhna hoga..div kitna area le rha hai and image kitna ye janne kliye hover kro inspect me ja ke */
+
+    height: 165px;
+    width: 165px;
+    display: flex; /* Centers the image */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    /* taki jab ham hover kare images par to khuch change dikhe */
+    /* opacity:0.5 ; thora sa blur ho jayega image */
+    cursor:pointer;
+    background-color: black;
+}
+
+img
+{
+    /* for all the images */
+    height: 150px;
+    width: 150px;
+    object-fit:coverx; /*this is to make image fit in div stretch ya srink n dikhe */
+    border-radius: 50%;
+}
+
+.choices
+{
+    display:flex;  /*sare images ko ek line me lane kliye */
+    justify-content: center; /*sare k sare images ko center me ane kliye*/
+    align-items: center; /*property is part of the Flexbox layout in CSS and is used to align items vertically within a flex container. */
+    gap: 5rem;
+    margin-top: 5rem; /* 1rem = 16px*/
+}
+
+.score-board
+{
+    /* score board me do score hai dono hi par khuch common styling krna tha to direct score-board hi le liye */
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   font-size: 2rem;
+   margin-top: 3rem;
+}
+
+#user-score, #comp-score
+{
+    /* The # is a selector used to target an element by its ID attribute */
+    font-size: 4rem; /*taki dono score thora bara dikhe */
+}
+
+#msg
+{
+    background-color: cornflowerblue;
+    color: white;
+    font-style: oblique;
+    font-size: 2rem;
+    margin-top: 7rem;
+    display: inline;  /*agar inline n kare to lambi si horizontal line ek strip jaise dikhegi*/
+     padding: 1rem; /* msg k charo taraf distance ban jayega container k ander */
+    border-radius: 1rem;
+} 
+
+.msg-container
+{
+    margin-top: 3rem;
+}
